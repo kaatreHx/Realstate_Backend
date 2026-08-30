@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Build Outputs
+dist/
+build/
+
+# Prisma Generated Client
+src/generated/
+
+# Uploaded Files (Multer / Media)
+uploads/*
+!uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Coverage and Diagnostic Reports
+coverage/
+*.lcov
+.nyc_output/
+
+# OS & System Files
+.DS_Store
+Thumbs.db
+
+# IDE & Editor Settings
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
