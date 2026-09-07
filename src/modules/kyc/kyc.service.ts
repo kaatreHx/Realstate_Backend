@@ -8,7 +8,7 @@ export async function submitKyc(userId: string, rawData: KycInput, files: KycFil
         throw new Error('You already have a pending KYC application');
     }
     if (existing && existing.status === 'APPROVED') {
-        throw new Error('KYC already approved');
+        throw new Error('KYC already approved status');
     }
 
     const clean = sanitizeKycInput(rawData);
